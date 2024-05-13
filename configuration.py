@@ -1,4 +1,4 @@
-CONTRACT_ADDRESS = "0x14cCF7A088A948f64B7537C80fD6B56C7f3cFF1B"
+CONTRACT_ADDRESS = "0x648b25B81e2691255ed47683794713A3BB9989a0"
 ABI = """
 [
 	{
@@ -59,11 +59,6 @@ ABI = """
 	},
 	{
 		"inputs": [
-			{
-				"internalType": "address",
-				"name": "_seller",
-				"type": "address"
-			},
 			{
 				"internalType": "address",
 				"name": "_buyer",
@@ -383,10 +378,17 @@ ABI = """
 		"type": "function"
 	},
 	{
+		"inputs": [],
+		"name": "withdrawall",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
 		"inputs": [
 			{
 				"internalType": "address",
-				"name": "_from",
+				"name": "_to",
 				"type": "address"
 			},
 			{
@@ -395,9 +397,9 @@ ABI = """
 				"type": "uint256"
 			}
 		],
-		"name": "withdrawall",
+		"name": "withdrawallTwo",
 		"outputs": [],
-		"stateMutability": "nonpayable",
+		"stateMutability": "payable",
 		"type": "function"
 	},
 	{
@@ -544,13 +546,7 @@ ABI = """
 		"type": "function"
 	},
 	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "userAdd",
-				"type": "address"
-			}
-		],
+		"inputs": [],
 		"name": "getBalance",
 		"outputs": [
 			{
